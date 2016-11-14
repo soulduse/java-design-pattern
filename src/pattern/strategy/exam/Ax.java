@@ -3,9 +3,9 @@ package pattern.strategy.exam;
 /**
  * Created by soul on 2016. 11. 14..
  */
-public class Knife implements Weapon {
+public class Ax implements Weapon{
     @Override
     public void attack() {
-        System.out.println("칼 공격");
+        System.out.println("도끼 공격");
     }
 }
