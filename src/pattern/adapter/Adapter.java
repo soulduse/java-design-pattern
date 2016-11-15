@@ -6,6 +6,6 @@ package pattern.adapter;
 public interface Adapter {
 
     // 원하는 요구사항
-    float twiceOf(float f);
-    float halfOf(float f);
+    Float twiceOf(Float f);
+    Float halfOf(Float f);
 }

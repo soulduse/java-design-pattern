@@ -6,8 +6,9 @@ package pattern.adapter;
 public class Main {
 
     public static void main(String[] args) {
-        Calculate calculate = new Calculate();
-        System.out.println(calculate.halfOf(10));
-        System.out.println(calculate.twiceOf(10));
+        Adapter adapter = new AdapterImpl();
+
+        System.out.println(adapter.twiceOf(100f));
+        System.out.println(adapter.halfOf(88f));
     }
 }
