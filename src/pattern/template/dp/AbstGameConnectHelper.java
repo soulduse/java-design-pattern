@@ -28,6 +28,8 @@ public abstract class AbstGameConnectHelper {
         int i = authorization(userName);
 
         switch (i){
+            case -1:
+                throw new Error("셧다운");
             case 0: // game manager
                 System.out.println("게임 매니저");
                 break;
