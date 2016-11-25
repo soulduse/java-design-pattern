@@ -16,5 +16,15 @@ public class Main {
                 circle2.getX()+","+
                 circle2.getY()+","+
                 circle2.getR());
+
+        Cat navi = new Cat();
+        navi.setName("navi");
+
+        Cat yo = navi;
+        yo.setName("yo");
+
+        System.out.println(navi.getName());
+        System.out.println(yo.getName());
+
     }
 }
