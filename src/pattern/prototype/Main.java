@@ -29,14 +29,26 @@ public class Main {
         System.out.println(yo.getName());
 
 
+        /*
+            스트링 값은 깊은 복사가 이루어지지만,
+            Int 형의 경우 멤버 변수에서 깊은 변수가 이루어지지 않는다.
+            따라서 명시적으로 복사를 해주면된다.
+
+         */
+
         // 깊은 복사
         Cat navi2 = new Cat();
         navi2.setName("navi");
+        navi2.setAge(new Age(2012, 4));
 
         Cat yo2 = navi2.copy();
         yo2.setName("yo");
+        yo2.getAge().setYear(2015);
+        yo2.getAge().setValue(2);
 
         System.out.println(navi2.getName());
         System.out.println(yo2.getName());
+        System.out.println(navi2.getAge().getYear());
+        System.out.println(yo2.getAge().getYear());
     }
 }
